@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">          
+            <div id="wrap">  
+                <ul class="navbar">
+                    <li class="navbar-li">
+                        <a href="/index.html">
+                            <img src="/img/main_logo.png" alt="logo" class="header-logo" style="width: 50px;">
+                        </a>
+                    </li>
+                    <li class="navbar-li">
+                        <a href="index.html" class="navbar-a">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="navbar-li">
+                        <a href="about-me.html" class="navbar-a">
+                            Обо мне
+                        </a>
+                        <ul class="navbar">
+                            <li class="navbar-li">
+                                <a href="skill.html" class="navbar-a">
+                                    Мои навыки
+                                </a>
+                            </li>
+                            <li class="navbar-li">
+                                <a href="portfolio.html" class="navbar-a">
+                                    Мои работы
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar-li">
+                        <a href="contacts.html" class="navbar-a">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="header-logos flex">
+                <a href="#" class="header-mail">
+                    <img src="img/mail.png" alt="mail" class="header-mail-img">
+                </a>
+                <a href="#" class="header-phone">
+                    <img src="img/phone.png" alt="phone" class="header-phone-img">
+                </a>
+            </div>          
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="contacts-section section-offset">
+            <div class="container">
+                <div class="contacts-content">
+                    <h1 class="contacts-title flex">
+                        Как можно со мной связаться?
+                    </h1>
+                    <div class="contacts-lr flex">
+                        <div class="left flex">
+                            <h2 class="contacts-title-list top-title">
+                                Мои Контакты:
+                            </h2>
+                            
+                            <ul class="contacts-list list-reset">
+                                <li class="contacts-link flex">
+                                    <a href="#" class="contacts-phone">
+                                        <img src="img/phone.png" alt="phone" class="contacts-img-phone">
+                                    </a>
+                                    <p class="contacts-phone-descr">Мой телефон:</p>
+                                   
+                                </li>
+                                <li class="contacts-link">
+                                    <a href="#" class="contacts-phone-descr contacts-a">+7 987 654 32 21</a>
+                                </li>
+                                <li class="contacts-link flex">
+                                    <a href="#" class="contacts-mail">
+                                        <img src="img/mail.png" alt="mail" class="contacts-img-mail">
+                                       
+                                    </a>
+                                    <p class="contacts-mail-descr">Моя почта:</p>
+                                   
+                                </li>
+                                <li class="contacts-link">
+                                    <a href="#" class="contacts-mail-descr contacts-a">mymail@mail.ru</a>
+                                </li>
+                            </ul> 
+                        </div>
+                        
+                       <div class="right flex">
+                            <h2 class="contacts-title-list">
+                                Или заполните форму:
+                            </h2>              
+                            <form action="https://jsonplaceholder.typicode.com//posts" method="POST" class="form">
+                                <input type="text" name="name" placeholder="Ф.И.О." style="margin-bottom: 20px;" required>
+                                <input type="email" name="email" placeholder="E-mail" style="margin-bottom: 20px;" required>
+                                <input type="tel" name="phone" placeholder="Ваш телефон" style="margin-bottom: 20px;" required>                               
+                                <textarea class="textarea" name="comment" style="margin-bottom: 30px; height: 150px;" placeholder="Сообщение"></textarea>
+                                <button class="btn btn-reset">
+                                    отправить
+                                </button>
+                            </form>
+                            
+                               
+                                                     
+                        </div>
+                    </div>                                     
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container flex">
+            <p class="footer-descr">
+                Лямкина Карина, 2022
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
